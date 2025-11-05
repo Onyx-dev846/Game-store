@@ -1,0 +1,68 @@
+[
+    {
+        "title": "Dark Souls 3",
+        "description": "Дуже добра гра",
+        "price": 990,
+        "image": "Dark_souls_3_cover_art.jpg"
+    },
+    {
+        "title": "The Witcher 3",
+        "description": "Епічна RPG гра",
+        "price": 599,
+        "image": "header.jpg"
+    },
+    {
+        "title": "Cyberpunk 2077",
+        "description": "Футуристична гра",
+        "price": 1299,
+        "image": "cyberpunk-2077.jpg"
+    },
+    {
+        "title": "Elden Ring",
+        "description": "Відкритий світ RPG",
+        "price": 1599,
+        "image": "Elden_Ring_-_cover.jpg"
+    },
+    {
+        "title": "Dark Souls 3",
+        "description": "Дуже добра гра",
+        "price": 990,
+        "image": "Dark_souls_3_cover_art.jpg"
+    },
+        {
+        "title": "Dark Souls 3",
+        "description": "Дуже добра гра",
+        "price": 990,
+        "image": "Dark_souls_3_cover_art.jpg"
+    },
+        {
+        "title": "Dark Souls 3",
+        "description": "Дуже добра гра",
+        "price": 990,
+        "image": "Dark_souls_3_cover_art.jpg"
+    },
+        {
+        "title": "Dark Souls 3",
+        "description": "Дуже добра гра",
+        "price": 990,
+        "image": "Dark_souls_3_cover_art.jpg"
+    },
+        {
+        "title": "Dark Souls 3",
+        "description": "Дуже добра гра",
+        "price": 990,
+        "image": "Dark_souls_3_cover_art.jpg"
+    },
+        {
+        "title": "Dark Souls 3",
+        "description": "Дуже добра гра",
+        "price": 990,
+        "image": "Dark_souls_3_cover_art.jpg"
+    },
+        {
+        "title": "Dark Souls 3",
+        "description": "Дуже добра гра",
+        "price": 990,
+        "image": "Dark_souls_3_cover_art.jpg"
+    }
+]

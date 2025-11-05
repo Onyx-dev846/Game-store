@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game store</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <button class="menu-btn" id="menuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="search-container">
+                <input class="Search" type="text" placeholder="Шукати в крамниці">
+                <img class="icon_Search" src="img/Search.png" alt="Search">
+            </div>
+        </div>
+        
+        <div class="text">
+            <p>Увесь асортимент</p>
+            <p>Список бажаного</p>
+        </div>
+        
+        <div class="right">
+            <div class="cart-wrapper" id="cartWrapper">
+                <img class="icon_Shopping" src="img/Shopping cart.png" alt="Cart">
+                <div class="cart-count" id="cartCount">0</div>
+            </div>
+            <img class="icon_account" src="img/account_circle.png" alt="Account">
+        </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>Меню</h2>
+            <button class="close-btn" id="closeBtn">&times;</button>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-link">Бібліотека</a>
+            <a href="#" class="nav-link">Спільнота</a>
+            <a href="#" class="nav-link">Партнерська програма і контакти</a>
+            <a href="#" class="nav-link">Про нас</a>
+            <a href="#" class="nav-link">Контакти</a>
+        </nav>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    
+    <div class="flying-item" id="flyingItem"></div>
+
+    
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h3>Ваша корзина</h3>
+                <button class="close-cart-btn" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                
+            </div>
+            <div class="cart-total">
+                <strong>Всього: <span id="cartTotal">0</span> грн</strong>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Оформити замовлення</button>
+        </div>
+    </div>
+
+    <main>
+        <div class="cards">
+            <h1>Наші товари</h1>
+            <div class="products-list">
+                
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
