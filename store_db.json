@@ -24,45 +24,75 @@
         "image": "Elden_Ring_-_cover.jpg"
     },
     {
-        "title": "Dark Souls 3",
+        "title": "Minecraft",
         "description": "Дуже добра гра",
         "price": 990,
-        "image": "Dark_souls_3_cover_art.jpg"
+        "image": "Minecraft_logo.png"
     },
         {
-        "title": "Dark Souls 3",
+        "title": "Terraria",
         "description": "Дуже добра гра",
         "price": 990,
-        "image": "Dark_souls_3_cover_art.jpg"
+        "image": "capsule_616x353.jpg"
     },
         {
-        "title": "Dark Souls 3",
+        "title": "The forest",
         "description": "Дуже добра гра",
         "price": 990,
-        "image": "Dark_souls_3_cover_art.jpg"
+        "image": "Theforest.jpg"
     },
         {
-        "title": "Dark Souls 3",
+        "title": "Sons of the forest",
         "description": "Дуже добра гра",
         "price": 990,
-        "image": "Dark_souls_3_cover_art.jpg"
+        "image": "Sons_of_the_Forest.jpg"
     },
         {
-        "title": "Dark Souls 3",
+        "title": "Dark Souls 2",
         "description": "Дуже добра гра",
         "price": 990,
-        "image": "Dark_souls_3_cover_art.jpg"
+        "image": "capsule_616x353 (2).jpg"
     },
         {
-        "title": "Dark Souls 3",
+        "title": "Dark Souls remastered",
         "description": "Дуже добра гра",
         "price": 990,
-        "image": "Dark_souls_3_cover_art.jpg"
+        "image": "capsule_616x353 (1).jpg"
     },
         {
-        "title": "Dark Souls 3",
+        "title": "Dont Starve",
         "description": "Дуже добра гра",
         "price": 990,
-        "image": "Dark_souls_3_cover_art.jpg"
+        "image": "Don't_Starve_cover.jpg"
+    },
+    {
+        "title": "Dont Starve together",
+        "description": "Дуже добра гра",
+        "price": 990,
+        "image": "081425533fd5a75ad96eb4333f260edf690b91110402ac801e07fd332035da8e.avif"
+    },
+    {
+        "title": "Lies of P",
+        "description": "Дуже добра гра",
+        "price": 990,
+        "image": "726aecde55db02155c75a121cc914c7d48d66fabcea33fe7.avif"
+    },
+    {
+        "title": "The Last of Us",
+        "description": "Дуже добра гра",
+        "price": 990,
+        "image": "20230316194551!The_Last_of_Us_Cover.jpg"
+    },
+    {
+        "title": "The Last of Us Part II",
+        "description": "Дуже добра гра",
+        "price": 990,
+        "image": "EGS_TheLastofUsPartIIRemastered_NaughtyDogLLCNixxesSoftwareIronGalaxy_S1_2560x1440-e93b7a99866b784c5fc948c1666df5e0.jpg"
+    },
+    {
+        "title": "Bloodborne",
+        "description": "Дуже добра гра",
+        "price": 990,
+        "image": "NVmnBXze9ElHzU6SmykrJLIV.jpg"
     }
 ]
