@@ -63,7 +63,7 @@ function addToCart(product, button) {
         flyingItem.style.left = cartRect.left + cartRect.width / 2 + 'px';
         flyingItem.style.top = cartRect.top + cartRect.height / 2 + 'px';
         flyingItem.style.transform = 'scale(0.5)';
-    }, 50);
+    }, 200);
 
     
     setTimeout(() => {
@@ -82,7 +82,7 @@ function addToCart(product, button) {
             cartCountElement.classList.remove('bump');
         }, 300);
 
-    }, 800);
+    }, 1500);
 }
 
 function updateCartCount() {
@@ -109,17 +109,22 @@ function updateCartItems() {
         return;
     }
 
-    
-    const groupedCart = cart.reduce((acc, product) => {
+
+    const groupedCart = cart.reduce((acc, product, index) => {
         const key = product.title;
         if (!acc[key]) {
-            acc[key] = { ...product, quantity: 0 };
+            acc[key] = { 
+                ...product, 
+                quantity: 0, 
+                indexes: []
+            };
         }
         acc[key].quantity++;
+        acc[key].indexes.push(index); 
         return acc;
     }, {});
 
-    
+
     Object.values(groupedCart).forEach(item => {
         const cartItem = document.createElement('div');
         cartItem.className = 'cart-item';
@@ -128,14 +133,42 @@ function updateCartItems() {
                 <div class="cart-item-name">${item.title}</div>
                 <div class="cart-item-details">${item.quantity} × ${item.price} грн</div>
             </div>
-            <div class="cart-item-price">${item.price * item.quantity} грн</div>
+            <div class="cart-item-right">
+                <div class="cart-item-price">${item.price * item.quantity} грн</div>
+                <button class="remove-item-btn" data-indexes="${item.indexes.join(',')}">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M18 6L6 18M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
         `;
         cartItems.appendChild(cartItem);
     });
 
-    
+
+    const removeButtons = document.querySelectorAll('.remove-item-btn');
+    removeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const indexesString = this.getAttribute('data-indexes');
+            const indexes = indexesString.split(',').map(Number);
+            removeFromCart(indexes);
+        });
+    });
+
+
     const total = cart.reduce((sum, product) => sum + product.price, 0);
     cartTotal.textContent = total;
+}
+
+function removeFromCart(indexes) {
+    indexes.sort((a, b) => b - a).forEach(index => {
+        cart.splice(index, 1);
+    });
+    
+    cartCount = cart.length;
+    updateCartCount();
+    updateCartItems();
+    saveCartToLocalStorage();
 }
 
 function saveCartToLocalStorage() {
